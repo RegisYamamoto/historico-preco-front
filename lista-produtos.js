@@ -7,24 +7,26 @@ async function getProdutos() {
     const data = await response.json();
 
     const produtosResposeDto = data.produtosResponseDto;
-    console.log("produtosResposeDto: " + JSON.stringify(Object.entries(produtosResposeDto)));
+    console.log("produtosResposeDto: " + JSON.stringify(produtosResposeDto));
 
     produtosResposeDto.map((produtoResponseDto) => {
-        console.log("produtoResposeDto: " + JSON.stringify(Object.entries(produtoResponseDto)));
+        console.log("produtoResposeDto: " + JSON.stringify(produtoResponseDto));
         listaProdutos(produtoResponseDto);
     });
 }
 
 function listaProdutos(produtoResponseDto) {
-    const nomeHtml = document.createElement("h3");
+    const nomeHtml = document.createElement("h4");
     nomeHtml.innerText = produtoResponseDto.nome;
     listaProdutosHtml.appendChild(nomeHtml);
 
-    const precos = produtoResponseDto.precos;
-    console.log("precos: " + JSON.stringify(Object.entries(precos)));
+    const idHtml = document.createElement("p");
+    idHtml.innerText = produtoResponseDto.id;
+    listaProdutosHtml.append(idHtml);
 
+    const precos = produtoResponseDto.precos;
     precos.map((preco) => {
-        console.log("preco: " + JSON.stringify(Object.entries(preco)));
+        console.log("preco: " + JSON.stringify(preco));
         listarPrecos(preco);
     });
 
