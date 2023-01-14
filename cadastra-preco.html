@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico de Preços</title>
+    <link rel="stylesheet" href="css/cadastra-preco.css">
+    <script src="js/cadastra-preco.js" defer></script>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="lista-produtos.html">Lista de produtos</a></li>
+            <li><a href="mostra-produto.html">Produto</a></li>
+            <li>Cadastro de Preço</li>
+        </ul>
+    </header>
+
+    <main>
+        <form id="formulario">
+            <div id="cadastrar-preco">
+                <h3>Cadastrar preço</h3>
+                <input id="id-produto" type="text" placeholder="Digite o id do produto">
+                <input id="preco" type="text" placeholder="Digite o preço do produto">
+                <input id="loja-consultada" type="text" placeholder="Digite a loja consultada">
+                <input type="submit" value="Cadastrar">
+            </div>
+        </form>
+
+        <div id="resposta"></div>
+    </main>
+</body>
+</html>
