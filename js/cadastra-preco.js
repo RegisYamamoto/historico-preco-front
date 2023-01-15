@@ -30,13 +30,14 @@ async function cadastrarPreco(requestBody) {
     });
 
     const data = await response.json();
-    console.log("data: " + JSON.stringify(data));
-    console.log("data.error: " + data.error);
+
+    document.querySelectorAll("#resposta p").forEach(r => r.remove());
 
     if (data.error === undefined) {
         const resposta = document.createElement("p");
         resposta.innerText = "Cadastro de preço realizado com sucesso";
         respostaHtml.appendChild(resposta);
+        formularioHtml.reset();
     } else {
         const resposta = document.createElement("p");
         resposta.innerText = "Erro ao cadastrar preço";
