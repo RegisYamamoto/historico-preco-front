@@ -5,26 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Histórico de Preços</title>
-    <link rel="stylesheet" href="css/cadastra-preco.css">
-    <script src="js/cadastra-preco.js" defer></script>
+    <link rel="stylesheet" href="css/cadastra-produto.css">
+    <script src="js/cadastra-produto.js" defer></script>
 </head>
 <body>
     <header>
         <ul>
             <li><a href="lista-produtos.html">Lista de Produtos</a></li>
             <li><a href="mostra-produto.html">Produto</a></li>
-            <li>Cadastro de Preço</li>
-            <li><a href="cadastra-produto.html">Cadastro de Produto</a></li>
+            <li><a href="cadastra-preco.html">Cadastro de Preço</a></li>
+            <li>Cadastro de Produto</li>
         </ul>
     </header>
 
     <main>
         <form id="formulario">
             <div id="cadastrar-preco">
-                <h3>Cadastrar preço</h3>
+                <h3>Cadastrar produto</h3>
                 <input id="id-produto" type="text" placeholder="Digite o id do produto">
-                <input id="preco" type="text" placeholder="Digite o preço do produto">
-                <input id="loja-consultada" type="text" placeholder="Digite a loja consultada">
+                <input id="nome" type="text" placeholder="digite o nomde do produto">
+                <input id="descricao" type="text" placeholder="Digite a descrição do produto">
+                <input id="marca" type="marca" placeholder="Digite a marca do produto">
                 <input type="submit" value="Cadastrar">
             </div>
         </form>

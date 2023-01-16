@@ -8,6 +8,7 @@ formularioHtml.addEventListener("submit", (e) => {
     e.preventDefault();
 
     console.log("precoInput.value: " + precoInput.value);
+    console.log("idProdutoInput: " + idProdutoInput.value);
 
     let requestBody = {
         preco: precoInput.value,
@@ -20,7 +21,9 @@ formularioHtml.addEventListener("submit", (e) => {
 
 async function cadastrarPreco(requestBody) {
     console.log("request body: " + requestBody);
-    const response = await fetch("http://localhost:8080/produtos/260467/precos", {
+    const uri = "http://localhost:8080/produtos/" + idProdutoInput.value + "/precos";
+    console.log("uri: " + uri);
+    const response = await fetch(uri, {
        method: "POST",
        body: requestBody,
        headers: {

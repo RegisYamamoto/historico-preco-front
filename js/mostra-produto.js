@@ -17,6 +17,9 @@ async function buscarProduto() {
 }
 
 function mostrarProduto(data) {
+    document.querySelectorAll("#produto h4").forEach(p => p.remove());
+    document.querySelectorAll("#produto p").forEach(p => p.remove());
+
     const nomeHtml = document.createElement("h4");
     nomeHtml.innerText = data.nome;
     produtoHtml.appendChild(nomeHtml);
