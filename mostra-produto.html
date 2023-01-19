@@ -10,26 +10,38 @@
     <script src="js/mostra-produto.js" defer></script>
 </head>
 <body>
-    <header>
-        <ul>
-            <li><a href="lista-produtos.html">Lista de Produtos</a></li>
-            <li>Produto</li>
-            <li><a href="cadastra-preco.html">Cadastro de Preço</a></li>
-            <li><a href="cadastra-produto.html">Cadastro de Produto</a></li>
-        </ul>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="lista-produtos.html">Lista de Produtos</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Produto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cadastra-preco.html">Cadastro de Preço</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cadastra-produto.html">Cadastro de Produto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-    <main>
-        <form id="formulario">
-            <div id="busca-produto">
-                <h3>Buscar produto</h3>
-                <input id="id-produto" type="text" placeholder="Digite o id do produto">
-                <input type="submit" value="Buscar">
-            </div>
-        </form>
-        
-        <h3>Produto</h3>
-        <div id="produto"></div>
-    </main>
+    <div class="container">
+        <main>
+            <form id="formulario">
+                <div id="busca-produto">
+                    <h3>Buscar produto</h3>
+                    <input id="id-produto" type="text" placeholder="Digite o id do produto">
+                    <input type="submit" value="Buscar">
+                </div>
+            </form>
+            
+            <h3>Produto</h3>
+            <div id="produto"></div>
+        </main>
+    </div>
 </body>
 </html>

@@ -10,28 +10,40 @@
     <script src="js/cadastra-produto.js" defer></script>
 </head>
 <body>
-    <header>
-        <ul>
-            <li><a href="lista-produtos.html">Lista de Produtos</a></li>
-            <li><a href="mostra-produto.html">Produto</a></li>
-            <li><a href="cadastra-preco.html">Cadastro de Preço</a></li>
-            <li>Cadastro de Produto</li>
-        </ul>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="lista-produtos.html">Lista de Produtos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mostra-produto.html">Produto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cadastra-preco.html">Cadastro de Preço</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Cadastro de Produto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-    <main>
-        <form id="formulario">
-            <div id="cadastrar-preco">
-                <h3>Cadastrar produto</h3>
-                <input id="id-produto" type="text" placeholder="Digite o id do produto">
-                <input id="nome" type="text" placeholder="digite o nomde do produto">
-                <input id="descricao" type="text" placeholder="Digite a descrição do produto">
-                <input id="marca" type="marca" placeholder="Digite a marca do produto">
-                <input type="submit" value="Cadastrar">
-            </div>
-        </form>
-
-        <div id="resposta"></div>
-    </main>
+    <div class="container">
+        <main>
+            <form id="formulario">
+                <div id="cadastrar-preco">
+                    <h3>Cadastrar produto</h3>
+                    <input id="id-produto" type="text" placeholder="Digite o id do produto">
+                    <input id="nome" type="text" placeholder="digite o nomde do produto">
+                    <input id="descricao" type="text" placeholder="Digite a descrição do produto">
+                    <input id="marca" type="marca" placeholder="Digite a marca do produto">
+                    <input type="submit" value="Cadastrar">
+                </div>
+            </form>
+    
+            <div id="resposta"></div>
+        </main>
+    </div>
 </body>
 </html>

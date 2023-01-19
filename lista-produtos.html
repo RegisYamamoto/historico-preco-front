@@ -10,18 +10,30 @@
     <script src="js/lista-produtos.js" defer></script>
 </head>
 <body>
-    <header>
-        <ul>
-            <li>Lista de Produtos</li>
-            <li><a href="mostra-produto.html">Produto</a></li>
-            <li><a href="cadastra-preco.html">Cadastro de Preço</a></li>
-            <li><a href="cadastra-produto.html">Cadastro de Produto</a></li>
-        </ul>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Lista de Produtos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mostra-produto.html">Produto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cadastra-preco.html">Cadastro de Preço</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cadastra-produto.html">Cadastro de Produto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
     <main>
-        <h3>Produtos</h3>
-        <div id="lista-produtos"></div>
+        <div class="container">
+            <h3>Produtos</h3>
+            <div id="lista-produtos"></div>
+        </div>
     </main>
 </body>
 </html>
